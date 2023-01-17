@@ -1,9 +1,14 @@
 from aiogram import executor
 
 from loader import dp
+#, db 
+
 import middlewares, filters, handlers
 from utils.notify_admins import on_startup_notify
 from utils.set_bot_commands import set_default_commands
+# from utils.db_api import db_gino
+# from utils.db_api import commands
+
 
 
 async def on_startup(dispatcher):
@@ -12,6 +17,16 @@ async def on_startup(dispatcher):
 
     # Уведомляет про запуск
     await on_startup_notify(dispatcher)
+
+    #     # Creating DB
+    # print("Creating database")
+    # await db_gino.on_startup(dp)
+    # print("Done!")
+
+    # # Creating tables in DB
+    # print("Creating tables")
+    # await db.gino.create_all()
+    # print("Done!")
 
 
 if __name__ == '__main__':
