@@ -19,7 +19,7 @@ async def bot_start(message: types.Message):
 async def bot_start(message: types.Message):
     await message.answer(f"Контакты: \n")
     await message.answer(f"""
-<a href="https://www.linkedin.com/in/daniil-agalakov/">linkedin</a>
-<a href="https://www.t.me/lildaniil">telegram</a>
-<a href="https://www.instagram.com/daniilthecreator/">instagram</a>
+<a href="https://www.linkedin.com/in/daniil-agalakov/">Работа</a>
+<a href="https://www.t.me/lildaniil">Написать</a>
+<a href="https://www.instagram.com/daniilthecreator/">Картинки</a>
     """)
